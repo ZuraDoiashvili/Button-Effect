@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  margin: 0;
+  box-shadow: none;
+  box-sizing: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-weight: bold;
+}
+body {
+  background-image: url(image/Background.jpg);
+}
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 70px;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  margin: 34px;
+  transition: 1.22s;
+  cursor: pointer;
+}
+/* Button 1 CSS */
+div a:nth-child(1):hover {
+  background: #bebebe;
+  box-shadow: -20px 20px 34px rgb(70, 70, 70);
+}
+/* Button 2 CSS */
+div a:nth-child(2) {
+  background: linear-gradient(90deg, #755bea, #55e7fc);
+}
+/* Button 3 CSS */
+div a:nth-child(3) {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: 3px solid #686868;
+  color: black;
+}
+div a:nth-child(3) span {
+  background-color: #686868;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+}
+div a:nth-child(3):hover span {
+  width: 100%;
+}
+/* Button 4 CSS */
+div a:nth-child(4) {
+  color: black;
+  background-color: cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+div a:nth-child(4):hover {
+  box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 50px cyan,
+    0 0 70px cyan;
+}
+/* Button 5 CSS */
+div a:nth-child(5):hover {
+    background-color: gray;
+}
+@media screen and (max-width:610px) {
+    div a{
+        width: 400px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:500px) {
+    div a{
+        width: 300px;
+        height: 40px;
+    }
+}@media screen and (max-width:400px) {
+    div a{
+        font-size: 70%;
+        width: 200px;
+        height: 30px;
+    }
+}
